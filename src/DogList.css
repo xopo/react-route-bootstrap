@@ -1,0 +1,8 @@
+.Dog img {
+    width: 100%;
+    min-height: 140px;
+}
+
+.Dog .list-group {
+    min-height: 220px;
+}
