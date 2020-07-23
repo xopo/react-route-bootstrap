@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const DogList = ({ dogs }) => (
     <div>
-        <h1 className='dispaly-1 text-center'>Dog List!</h1>
+        <h1 className='dispaly-1 text-center my-4'>Dog List!</h1>
         <div className='row'>
             {dogs && dogs.map(((dog, id) => {
                 const { age, name, src } = dog;
-                const nameLink = <Link to={`/dogs/${name}`}>{name}</Link>;
+                const nameLink = <Link className='underline' to={`/dogs/${name}`}>{name}</Link>;
                 return (
                     <div key={id} className="col-sm-6 col-md-4">
                         <DogDetails {...{age, name: nameLink, src}} /> 
